@@ -19,6 +19,20 @@
   <title>Purple Reign</title>
 </head>
 <body>
-  <%= yield %>
+  <header id="fixed-nav">
+    <nav id="main-nav">
+      <a href="">Link 1</a>
+      <a href="">Link 2</a>
+      <a href="">Link 3</a>
+      <a href="">Link 4</a>
+    </nav>
+  </header>  
+  <div id="content-container">
+    <header id="title-panorama">
+      <h1>Purple Reign</h1>
+      <h3>Your source for all things Viking!</h3>
+    </header>
+    <%= yield %>
+  </div>
 </body>
 </html>
