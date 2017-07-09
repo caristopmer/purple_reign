@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   has_many :comments, foreign_key: :author_id
   has_many :articles, foreign_key: :author_id
-  has_many :commented_articles, through: :comments, source: :article
+  has_many :commented_articles, -> { distinct }, through: :comments, source: :article
 
   validates :username, :password_hash, presence: true
   validates :email, uniqueness: true, format: { with: /.+@\D*\.\D{3}\z/ }
