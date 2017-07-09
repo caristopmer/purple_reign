@@ -2,45 +2,88 @@
 font-family: 'Yrsa', serif;*/
 
 #content-container {
-  max-width: 1000px;
+  max-width: 1400px;
   min-width: 400px;
   width: 90%;
-  background-color: white;
+  background-color: black;
   margin: auto;
-  margin-top: 4%;
-  height: 2000px;
 }
 
 #fixed-nav {
  position: fixed;
  top: 0;
  width: 100%;
- height: 8%;
+ height: 60px;
  background-color: gold;
 }
 
 #main-nav {
-  position: absolute;
-  left:;
+  
+}
+
+.articles-container {
+  background-color: gray;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+#articles-header {
+padding-top: 5px;
+padding-left: 15px;
+}
+
+.article-snippet {
+ background-color: #471E79;
+ color: white;
+ margin: 15px;
+ padding: 5px 10px 5px 10px;
+}
+
+.article-wrapper {
+  
+}
+
+.article-title {
+  color: gold;
+}
+.article-text {
+  
+}
+.post-info {
+  
+}
+.post-author {
+  
+}
+.post-date {
+  
+}
+h1, h2, h3 {
+  font-family: 'Fresca', sans-serif;
 }
 
 #title-panorama {
+  margin-top: 60px;
   background-image: url('/images/stadium.jpg');
   background-size: cover;
   background-position: center;
-  height: 200px;
-  font-family: 'Fresca', sans-serif;
-  font-size: 24px;
+  height: 250px;
+  font-size: 26px;
+  color: gold;
+  text-shadow: -2px 0 #471E79, 0 2px #471E79, 2px 0 #471E79, 0 -2px #471E79;
+  letter-spacing: 5px;
 }
 
 .center-content {
   margin: auto;
   text-align: center;
-  color: gold;
-  width: 50%;
+  width: 70%;
   padding-top: 1%;
 }
 
 body {
   background-color: #471E79;
+  font-family: 'Yrsa', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
