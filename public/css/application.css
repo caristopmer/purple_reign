@@ -5,7 +5,7 @@ font-family: 'Yrsa', serif;*/
   max-width: 1400px;
   min-width: 400px;
   width: 90%;
-  background-color: black;
+  /*background-color: black;*/
   margin: auto;
 }
 
@@ -25,32 +25,56 @@ font-family: 'Yrsa', serif;*/
   background-color: gray;
   padding-bottom: 5px;
   margin-bottom: 20px;
+  border-radius: 15px;
+}
+.article-wrapper {
+  background-color: gray;
+  padding: 5px 10px;
+  margin-bottom: 20px;
 }
 
-#articles-header {
-padding-top: 5px;
-padding-left: 15px;
+.articles-header {
+  padding-top: 5px;
+  padding-left: 15px;
+  color: gold;
 }
 
 .article-snippet {
  background-color: #471E79;
- color: white;
  margin: 15px;
  padding: 5px 10px 5px 10px;
-}
-
-.article-wrapper {
-  
+ border-radius: 15px;
 }
 
 .article-title {
   color: gold;
 }
 .article-text {
-  
+  color: white;
 }
-.post-info {
-  
+.comments-container {
+  margin: 10px;
+  background-color: gold;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.comments-list {
+  list-style: none;
+}
+.comment {
+  margin-bottom: 10px;
+  background-color: black;
+  border-radius: 15px;
+  padding: 10px;
+}
+.comment-text {
+  color: white;
+}
+.post-info li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+  color: white;
 }
 .post-author {
   
