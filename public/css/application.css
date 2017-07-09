@@ -29,6 +29,16 @@ font-family: 'Yrsa', serif;*/
   background-size: cover;
   background-position: center;
   height: 200px;
+  font-family: 'Fresca', sans-serif;
+  font-size: 24px;
+}
+
+.center-content {
+  margin: auto;
+  text-align: center;
+  color: gold;
+  width: 50%;
+  padding-top: 1%;
 }
 
 body {
