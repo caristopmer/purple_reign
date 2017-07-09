@@ -10,14 +10,32 @@
   <!--
     application.css is where you put your styles
   -->
+  <link href="https://fonts.googleapis.com/css?family=Fresca|Yrsa" rel="stylesheet">
   <link rel="stylesheet" href="/css/application.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Purple Reign</title>
 </head>
 <body>
-  <%= yield %>
+  <header id="fixed-nav">
+    <nav id="main-nav" class="center-content">
+      <a href="">Home</a>
+      <a href="">Profile</a>
+      <a href="">Register</a>
+      <a href="">Log In</a>
+      <a href="">Log Out</a>
+    </nav>
+  </header>
+  <header id="title-panorama">
+      <div class="center-content">
+        <h1>Purple Reign</h1>
+        <h3>Your source for all things Viking!</h3>
+      </div>
+    </header>
+  <div id="content-container">
+    <%= yield %>
+  </div>
 </body>
 </html>
