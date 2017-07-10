@@ -1,0 +1,8 @@
+<article class="article-snippet">
+  <h3 class="article-title"><%= article.title %></h3>
+  <p class="article-text"><%= article.content.slice(0, 200) + "... (continued)" %></p>
+  <ul class="post-info">
+    <li class="post-author">by: <%= article.author.username %></li>
+    <li class="post-date">posted: <%= article.created_at %></li>
+  </ul>
+</article>

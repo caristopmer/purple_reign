@@ -1,5 +1,5 @@
 get '/' do
-  erb :index_sample
+  erb :index
 end
 
 get '/articles/1' do
