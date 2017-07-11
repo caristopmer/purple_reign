@@ -12,12 +12,16 @@ end
 
 post '/users' do
   @user = User.new(params[:user])
+  puts @user
   if @user.valid? && @user.password == params[:confirm_password]
     @user.save
     session[:user_id] = @user.id
     redirect "/"
   else
     @errors = @user.errors.full_messages
+    if @user.password != params[:confirm_password]
+      @errors << "Password & confirm password must match."
+    end
     erb :"users/new"
   end
 end
