@@ -4,7 +4,7 @@ get '/articles' do
 end
 
 get '/articles/new' do
-  erb :"articles/show"
+  erb :"articles/new"
 end
 
 post '/articles' do
