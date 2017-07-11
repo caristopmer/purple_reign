@@ -1,11 +1,19 @@
-post '/articles/:id' do
+get '/comments/:id' do
+  "show comment"
+end
+
+post '/articles/:id/comments' do
   "post new comment to article"
 end
 
-put '/articles/:article_id/comments/:comment_id' do
+get '/comments/:id/edit' do
+  "edit comment form"
+end
+
+put '/comments/:id' do
  "edit comment"
 end
 
-delete '/articles/:article_id/comments/:comment_id' do
+delete '/comments/:id' do
   "delete comment"
 end
