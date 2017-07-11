@@ -1,0 +1,16 @@
+<div class="article-wrapper">
+  <h2 class="articles-header"><%= @article.title %></h2>
+  <p class="article-text"><%= @article.content %></p>
+  <ul class="post-info">
+      <li class="post-author">by: <%= @article.author.username %></li>
+      <li class="post-date">posted: <%= @article.created_at %></li>
+    </ul>
+    <div class="comments-container">
+      <h3>Comments:</h3>
+      <ul class="comments-list">
+        <% @article.comments.each do |comment| %>
+          <%= erb :"comments/_show", locals: { comment: comment } %>
+        <% end %>
+      </ul>
+    </div>
+</div>
