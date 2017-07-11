@@ -1,9 +1,16 @@
 get '/sessions/new' do
-  "login form"
+  erb :"sessions/new"
 end
 
 post '/sessions' do
-  "login"
+  @user = User.find_by(email: params[:email])
+  if @user && @user.password == params[:password]
+    session[:user_id] = @user.id
+    redirect "/"
+  else
+    @errors = ["Login Information Incorrect."]
+    erb :"sessions/new"
+  end
 end
 
 delete '/sessions' do

@@ -26,8 +26,7 @@ font-family: 'Yrsa', serif;*/
   display: inline;
 }
 
-
-*/.articles-container {
+.articles-container {
   background-color: gray;
   padding-bottom: 5px;
   margin-bottom: 20px;
