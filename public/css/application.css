@@ -7,6 +7,7 @@ font-family: 'Yrsa', serif;*/
   width: 90%;
   /*background-color: black;*/
   margin: auto;
+  color: gold;
 }
 
 #fixed-nav {
@@ -22,12 +23,24 @@ font-family: 'Yrsa', serif;*/
   list-style-type: none;
 }
 
+input {
+  color: black;
+}
+
 #main-nav.nav-item {
   display: inline;
 }
 
+#guest-page {
+  background-color: gray;
+  height: 500px;
+}
 
-*/.articles-container {
+ul.errors {
+  color: red;
+}
+
+.articles-container {
   background-color: gray;
   padding-bottom: 5px;
   margin-bottom: 20px;
@@ -109,6 +122,14 @@ h1, h2, h3 {
   text-align: center;
   width: 70%;
   padding-top: 1%;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color:  #DAA520;
 }
 
 body {
