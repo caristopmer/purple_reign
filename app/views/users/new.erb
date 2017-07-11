@@ -1,0 +1,9 @@
+<h1>Register New User</h1>
+<form action="/users" method="post">
+  <%= erb :"users/_form", locals: { user: @user }%>
+  <label for="user[password]">Password:</label>
+  <input type="password" name="user[password]">
+  <label for="confirm_password">Confirm Password:</label>
+  <input type="password" name="confirm_password">
+  <input type="submit" value="Submit">
+</form>
