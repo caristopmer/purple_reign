@@ -12,7 +12,6 @@ end
 
 post '/users' do
   @user = User.new(params[:user])
-  puts @user
   if @user.valid? && @user.password == params[:confirm_password]
     @user.save
     session[:user_id] = @user.id

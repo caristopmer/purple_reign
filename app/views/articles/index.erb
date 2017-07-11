@@ -1,5 +1,6 @@
 <div class="articles-container">
   <h2 class="articles-header">Articles:</h2>
+  <h3><a href="/articles/new">Submit an Article</a></h3>
   <% @articles.each do |article| %>
     <%= erb :"articles/_show", locals: { article: article }%>
   <% end %>
