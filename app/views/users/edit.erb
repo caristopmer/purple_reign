@@ -1,7 +1,7 @@
 <h1>Edit User Info</h1>
 <form action="/users/<%= current_user.id %>/edit" method="post">
   <input type="hidden" name="_method" value="put">
-  <%= erb :"users/_form", locals: { user: @user }%>
+  <%= erb :"users/_form" %>
   <label for="user[password]">New Password:</label>
   <input type="password" name="user[password]">
   <label for="confirm_password">Confirm New Password:</label>

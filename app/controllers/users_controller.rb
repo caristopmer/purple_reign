@@ -3,7 +3,7 @@ get '/users' do
 end
 
 get '/users/new' do
- "user registration form"
+ erb :"users/new"
 end
 
 get '/users/:id' do
@@ -11,7 +11,15 @@ get '/users/:id' do
 end
 
 post '/users' do
- "create new user"
+  @user = User.new(params[:user])
+  if @user.valid? && @user.password == params[:confirm_password]
+    @user.save
+    session[:user_id] = @user.id
+    redirect "/"
+  else
+    @errors = @user.errors.full_messages
+    erb :"users/new"
+  end
 end
 
 get '/users/:id/edit' do
