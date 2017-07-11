@@ -1,0 +1,4 @@
+<label for="user[username]">Username:</label>
+<input type="text" name="user[username]" value="<%= current_user.try(:username) %>">
+<label for="user[email]">Email:</label>
+<input type="text" name="user[email]" value="<%= current_user.try(:email) %>">

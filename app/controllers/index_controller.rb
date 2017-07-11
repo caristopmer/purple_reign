@@ -1,4 +1,5 @@
 get '/' do
+  redirect "/articles" if logged_in?
   erb :index
 end
 

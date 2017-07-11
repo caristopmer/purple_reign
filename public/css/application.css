@@ -13,15 +13,21 @@ font-family: 'Yrsa', serif;*/
  position: fixed;
  top: 0;
  width: 100%;
- height: 60px;
+ height: 110px;
  background-color: gold;
 }
 
 #main-nav {
-  
+  text-align: center;
+  list-style-type: none;
 }
 
-.articles-container {
+#main-nav.nav-item {
+  display: inline;
+}
+
+
+*/.articles-container {
   background-color: gray;
   padding-bottom: 5px;
   margin-bottom: 20px;
@@ -77,17 +83,17 @@ font-family: 'Yrsa', serif;*/
   color: white;
 }
 .post-author {
-  
+
 }
 .post-date {
-  
+
 }
 h1, h2, h3 {
   font-family: 'Fresca', sans-serif;
 }
 
 #title-panorama {
-  margin-top: 60px;
+  margin-top: 110px;
   background-image: url('/images/stadium.jpg');
   background-size: cover;
   background-position: center;

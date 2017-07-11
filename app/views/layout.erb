@@ -20,13 +20,7 @@
 </head>
 <body>
   <header id="fixed-nav">
-    <nav id="main-nav" class="center-content">
-      <a href="">Home</a>
-      <a href="">Profile</a>
-      <a href="">Register</a>
-      <a href="">Log In</a>
-      <a href="">Log Out</a>
-    </nav>
+      <%= erb :_nav %>
   </header>
   <header id="title-panorama">
       <div class="center-content">
@@ -35,6 +29,7 @@
       </div>
     </header>
   <div id="content-container">
+    <%= erb :_errors %>
     <%= yield %>
   </div>
 </body>
